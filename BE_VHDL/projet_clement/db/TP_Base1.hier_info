@@ -1,0 +1,6 @@
+|TP_Base1
+A1 => S~0.IN0
+B1 => S~0.IN1
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,11 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+ENTITY TP_Base1 IS
+port( A1,B1 : in std_logic;
+			 
+
+out std_logic
+);
+END <nom_entité>;

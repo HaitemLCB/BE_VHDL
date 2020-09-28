@@ -1,0 +1,383 @@
+Simulator report for diviseur
+Thu Sep 03 11:38:20 2020
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 140 nodes    ;
+; Simulation Coverage         ;      44.29 % ;
+; Total Number of Transitions ; 72558        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                                     ; Setting          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Simulation mode                                                                            ; Functional       ; Timing        ;
+; Start time                                                                                 ; 0 ns             ; 0 ns          ;
+; End time                                                                                   ; 10 us            ;               ;
+; Simulation results format                                                                  ; CVWF             ;               ;
+; Vector input source                                                                        ; sim_diviseur.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
+; Check outputs                                                                              ; Off              ; Off           ;
+; Report simulation coverage                                                                 ; On               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
+; Display missing 1-value coverage report                                                    ; On               ; On            ;
+; Display missing 0-value coverage report                                                    ; On               ; On            ;
+; Detect setup and hold time violations                                                      ; Off              ; Off           ;
+; Detect glitches                                                                            ; Off              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
+; Generate Signal Activity File                                                              ; Off              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      44.29 % ;
+; Total nodes checked                                 ; 140          ;
+; Total output ports checked                          ; 140          ;
+; Total output ports with complete 1/0-value coverage ; 62           ;
+; Total output ports with no 1/0-value coverage       ; 77           ;
+; Total output ports with no 1-value coverage         ; 77           ;
+; Total output ports with no 0-value coverage         ; 78           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |diviseur|div~13      ; |diviseur|div~13      ; out              ;
+; |diviseur|div~14      ; |diviseur|div~14      ; out              ;
+; |diviseur|div~15      ; |diviseur|div~15      ; out              ;
+; |diviseur|div~16      ; |diviseur|div~16      ; out              ;
+; |diviseur|div~17      ; |diviseur|div~17      ; out              ;
+; |diviseur|div~18      ; |diviseur|div~18      ; out              ;
+; |diviseur|div~19      ; |diviseur|div~19      ; out              ;
+; |diviseur|div~20      ; |diviseur|div~20      ; out              ;
+; |diviseur|div~21      ; |diviseur|div~21      ; out              ;
+; |diviseur|div~22      ; |diviseur|div~22      ; out              ;
+; |diviseur|div~23      ; |diviseur|div~23      ; out              ;
+; |diviseur|div~24      ; |diviseur|div~24      ; out              ;
+; |diviseur|div~25      ; |diviseur|div~25      ; out              ;
+; |diviseur|div~26      ; |diviseur|div~26      ; out              ;
+; |diviseur|div[11]     ; |diviseur|div[11]     ; regout           ;
+; |diviseur|div[10]     ; |diviseur|div[10]     ; regout           ;
+; |diviseur|div[9]      ; |diviseur|div[9]      ; regout           ;
+; |diviseur|div[8]      ; |diviseur|div[8]      ; regout           ;
+; |diviseur|div[7]      ; |diviseur|div[7]      ; regout           ;
+; |diviseur|div[6]      ; |diviseur|div[6]      ; regout           ;
+; |diviseur|div[5]      ; |diviseur|div[5]      ; regout           ;
+; |diviseur|div[4]      ; |diviseur|div[4]      ; regout           ;
+; |diviseur|div[3]      ; |diviseur|div[3]      ; regout           ;
+; |diviseur|div[2]      ; |diviseur|div[2]      ; regout           ;
+; |diviseur|div[1]      ; |diviseur|div[1]      ; regout           ;
+; |diviseur|div[0]      ; |diviseur|div[0]      ; regout           ;
+; |diviseur|clk_in      ; |diviseur|clk_in      ; out              ;
+; |diviseur|LessThan0~0 ; |diviseur|LessThan0~0 ; out0             ;
+; |diviseur|LessThan0~1 ; |diviseur|LessThan0~1 ; out0             ;
+; |diviseur|LessThan0~2 ; |diviseur|LessThan0~2 ; out0             ;
+; |diviseur|LessThan0~3 ; |diviseur|LessThan0~3 ; out0             ;
+; |diviseur|LessThan0~4 ; |diviseur|LessThan0~4 ; out0             ;
+; |diviseur|LessThan0~5 ; |diviseur|LessThan0~5 ; out0             ;
+; |diviseur|LessThan0~6 ; |diviseur|LessThan0~6 ; out0             ;
+; |diviseur|LessThan0~7 ; |diviseur|LessThan0~7 ; out0             ;
+; |diviseur|LessThan0~8 ; |diviseur|LessThan0~8 ; out0             ;
+; |diviseur|LessThan0~9 ; |diviseur|LessThan0~9 ; out0             ;
+; |diviseur|Add0~0      ; |diviseur|Add0~0      ; out0             ;
+; |diviseur|Add0~1      ; |diviseur|Add0~1      ; out0             ;
+; |diviseur|Add0~2      ; |diviseur|Add0~2      ; out0             ;
+; |diviseur|Add0~3      ; |diviseur|Add0~3      ; out0             ;
+; |diviseur|Add0~4      ; |diviseur|Add0~4      ; out0             ;
+; |diviseur|Add0~5      ; |diviseur|Add0~5      ; out0             ;
+; |diviseur|Add0~6      ; |diviseur|Add0~6      ; out0             ;
+; |diviseur|Add0~7      ; |diviseur|Add0~7      ; out0             ;
+; |diviseur|Add0~8      ; |diviseur|Add0~8      ; out0             ;
+; |diviseur|Add0~9      ; |diviseur|Add0~9      ; out0             ;
+; |diviseur|Add0~10     ; |diviseur|Add0~10     ; out0             ;
+; |diviseur|Add0~11     ; |diviseur|Add0~11     ; out0             ;
+; |diviseur|Add0~12     ; |diviseur|Add0~12     ; out0             ;
+; |diviseur|Add0~13     ; |diviseur|Add0~13     ; out0             ;
+; |diviseur|Add0~14     ; |diviseur|Add0~14     ; out0             ;
+; |diviseur|Add0~15     ; |diviseur|Add0~15     ; out0             ;
+; |diviseur|Add0~16     ; |diviseur|Add0~16     ; out0             ;
+; |diviseur|Add0~17     ; |diviseur|Add0~17     ; out0             ;
+; |diviseur|Add0~18     ; |diviseur|Add0~18     ; out0             ;
+; |diviseur|Add0~19     ; |diviseur|Add0~19     ; out0             ;
+; |diviseur|Add0~20     ; |diviseur|Add0~20     ; out0             ;
+; |diviseur|Add0~21     ; |diviseur|Add0~21     ; out0             ;
+; |diviseur|Add0~22     ; |diviseur|Add0~22     ; out0             ;
+; |diviseur|Add0~23     ; |diviseur|Add0~23     ; out0             ;
+; |diviseur|Add0~24     ; |diviseur|Add0~24     ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                             ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |diviseur|sig_clk_out~0 ; |diviseur|sig_clk_out~0 ; out              ;
+; |diviseur|div~0         ; |diviseur|div~0         ; out              ;
+; |diviseur|div~1         ; |diviseur|div~1         ; out              ;
+; |diviseur|div~2         ; |diviseur|div~2         ; out              ;
+; |diviseur|div~3         ; |diviseur|div~3         ; out              ;
+; |diviseur|div~4         ; |diviseur|div~4         ; out              ;
+; |diviseur|div~5         ; |diviseur|div~5         ; out              ;
+; |diviseur|div~6         ; |diviseur|div~6         ; out              ;
+; |diviseur|div~7         ; |diviseur|div~7         ; out              ;
+; |diviseur|div~8         ; |diviseur|div~8         ; out              ;
+; |diviseur|div~9         ; |diviseur|div~9         ; out              ;
+; |diviseur|div~10        ; |diviseur|div~10        ; out              ;
+; |diviseur|div~11        ; |diviseur|div~11        ; out              ;
+; |diviseur|div~12        ; |diviseur|div~12        ; out              ;
+; |diviseur|clk_out~reg0  ; |diviseur|clk_out~reg0  ; regout           ;
+; |diviseur|div[26]       ; |diviseur|div[26]       ; regout           ;
+; |diviseur|div[25]       ; |diviseur|div[25]       ; regout           ;
+; |diviseur|div[24]       ; |diviseur|div[24]       ; regout           ;
+; |diviseur|div[23]       ; |diviseur|div[23]       ; regout           ;
+; |diviseur|div[22]       ; |diviseur|div[22]       ; regout           ;
+; |diviseur|div[21]       ; |diviseur|div[21]       ; regout           ;
+; |diviseur|div[20]       ; |diviseur|div[20]       ; regout           ;
+; |diviseur|div[19]       ; |diviseur|div[19]       ; regout           ;
+; |diviseur|div[18]       ; |diviseur|div[18]       ; regout           ;
+; |diviseur|div[17]       ; |diviseur|div[17]       ; regout           ;
+; |diviseur|div[16]       ; |diviseur|div[16]       ; regout           ;
+; |diviseur|div[15]       ; |diviseur|div[15]       ; regout           ;
+; |diviseur|div[14]       ; |diviseur|div[14]       ; regout           ;
+; |diviseur|div[13]       ; |diviseur|div[13]       ; regout           ;
+; |diviseur|sig_clk_out   ; |diviseur|sig_clk_out   ; regout           ;
+; |diviseur|A_res         ; |diviseur|A_res         ; out              ;
+; |diviseur|clk_out       ; |diviseur|clk_out       ; pin_out          ;
+; |diviseur|LessThan0~10  ; |diviseur|LessThan0~10  ; out0             ;
+; |diviseur|LessThan0~11  ; |diviseur|LessThan0~11  ; out0             ;
+; |diviseur|LessThan0~12  ; |diviseur|LessThan0~12  ; out0             ;
+; |diviseur|LessThan0~13  ; |diviseur|LessThan0~13  ; out0             ;
+; |diviseur|LessThan0~14  ; |diviseur|LessThan0~14  ; out0             ;
+; |diviseur|LessThan0~15  ; |diviseur|LessThan0~15  ; out0             ;
+; |diviseur|LessThan0~16  ; |diviseur|LessThan0~16  ; out0             ;
+; |diviseur|LessThan0~17  ; |diviseur|LessThan0~17  ; out0             ;
+; |diviseur|LessThan0~18  ; |diviseur|LessThan0~18  ; out0             ;
+; |diviseur|LessThan0~19  ; |diviseur|LessThan0~19  ; out0             ;
+; |diviseur|LessThan0~20  ; |diviseur|LessThan0~20  ; out0             ;
+; |diviseur|LessThan0~21  ; |diviseur|LessThan0~21  ; out0             ;
+; |diviseur|LessThan0~22  ; |diviseur|LessThan0~22  ; out0             ;
+; |diviseur|LessThan0~23  ; |diviseur|LessThan0~23  ; out0             ;
+; |diviseur|LessThan0~24  ; |diviseur|LessThan0~24  ; out0             ;
+; |diviseur|LessThan0~25  ; |diviseur|LessThan0~25  ; out0             ;
+; |diviseur|LessThan0~26  ; |diviseur|LessThan0~26  ; out0             ;
+; |diviseur|LessThan0~27  ; |diviseur|LessThan0~27  ; out0             ;
+; |diviseur|LessThan0~28  ; |diviseur|LessThan0~28  ; out0             ;
+; |diviseur|Add0~25       ; |diviseur|Add0~25       ; out0             ;
+; |diviseur|Add0~26       ; |diviseur|Add0~26       ; out0             ;
+; |diviseur|Add0~27       ; |diviseur|Add0~27       ; out0             ;
+; |diviseur|Add0~28       ; |diviseur|Add0~28       ; out0             ;
+; |diviseur|Add0~29       ; |diviseur|Add0~29       ; out0             ;
+; |diviseur|Add0~30       ; |diviseur|Add0~30       ; out0             ;
+; |diviseur|Add0~31       ; |diviseur|Add0~31       ; out0             ;
+; |diviseur|Add0~32       ; |diviseur|Add0~32       ; out0             ;
+; |diviseur|Add0~33       ; |diviseur|Add0~33       ; out0             ;
+; |diviseur|Add0~34       ; |diviseur|Add0~34       ; out0             ;
+; |diviseur|Add0~35       ; |diviseur|Add0~35       ; out0             ;
+; |diviseur|Add0~36       ; |diviseur|Add0~36       ; out0             ;
+; |diviseur|Add0~37       ; |diviseur|Add0~37       ; out0             ;
+; |diviseur|Add0~38       ; |diviseur|Add0~38       ; out0             ;
+; |diviseur|Add0~39       ; |diviseur|Add0~39       ; out0             ;
+; |diviseur|Add0~40       ; |diviseur|Add0~40       ; out0             ;
+; |diviseur|Add0~41       ; |diviseur|Add0~41       ; out0             ;
+; |diviseur|Add0~42       ; |diviseur|Add0~42       ; out0             ;
+; |diviseur|Add0~43       ; |diviseur|Add0~43       ; out0             ;
+; |diviseur|Add0~44       ; |diviseur|Add0~44       ; out0             ;
+; |diviseur|Add0~45       ; |diviseur|Add0~45       ; out0             ;
+; |diviseur|Add0~46       ; |diviseur|Add0~46       ; out0             ;
+; |diviseur|Add0~47       ; |diviseur|Add0~47       ; out0             ;
+; |diviseur|Add0~48       ; |diviseur|Add0~48       ; out0             ;
+; |diviseur|Add0~49       ; |diviseur|Add0~49       ; out0             ;
+; |diviseur|Add0~50       ; |diviseur|Add0~50       ; out0             ;
++-------------------------+-------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                             ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |diviseur|sig_clk_out~0 ; |diviseur|sig_clk_out~0 ; out              ;
+; |diviseur|div~0         ; |diviseur|div~0         ; out              ;
+; |diviseur|div~1         ; |diviseur|div~1         ; out              ;
+; |diviseur|div~2         ; |diviseur|div~2         ; out              ;
+; |diviseur|div~3         ; |diviseur|div~3         ; out              ;
+; |diviseur|div~4         ; |diviseur|div~4         ; out              ;
+; |diviseur|div~5         ; |diviseur|div~5         ; out              ;
+; |diviseur|div~6         ; |diviseur|div~6         ; out              ;
+; |diviseur|div~7         ; |diviseur|div~7         ; out              ;
+; |diviseur|div~8         ; |diviseur|div~8         ; out              ;
+; |diviseur|div~9         ; |diviseur|div~9         ; out              ;
+; |diviseur|div~10        ; |diviseur|div~10        ; out              ;
+; |diviseur|div~11        ; |diviseur|div~11        ; out              ;
+; |diviseur|div~12        ; |diviseur|div~12        ; out              ;
+; |diviseur|clk_out~reg0  ; |diviseur|clk_out~reg0  ; regout           ;
+; |diviseur|div[26]       ; |diviseur|div[26]       ; regout           ;
+; |diviseur|div[25]       ; |diviseur|div[25]       ; regout           ;
+; |diviseur|div[24]       ; |diviseur|div[24]       ; regout           ;
+; |diviseur|div[23]       ; |diviseur|div[23]       ; regout           ;
+; |diviseur|div[22]       ; |diviseur|div[22]       ; regout           ;
+; |diviseur|div[21]       ; |diviseur|div[21]       ; regout           ;
+; |diviseur|div[20]       ; |diviseur|div[20]       ; regout           ;
+; |diviseur|div[19]       ; |diviseur|div[19]       ; regout           ;
+; |diviseur|div[18]       ; |diviseur|div[18]       ; regout           ;
+; |diviseur|div[17]       ; |diviseur|div[17]       ; regout           ;
+; |diviseur|div[16]       ; |diviseur|div[16]       ; regout           ;
+; |diviseur|div[15]       ; |diviseur|div[15]       ; regout           ;
+; |diviseur|div[14]       ; |diviseur|div[14]       ; regout           ;
+; |diviseur|div[13]       ; |diviseur|div[13]       ; regout           ;
+; |diviseur|div[12]       ; |diviseur|div[12]       ; regout           ;
+; |diviseur|sig_clk_out   ; |diviseur|sig_clk_out   ; regout           ;
+; |diviseur|A_res         ; |diviseur|A_res         ; out              ;
+; |diviseur|clk_out       ; |diviseur|clk_out       ; pin_out          ;
+; |diviseur|LessThan0~10  ; |diviseur|LessThan0~10  ; out0             ;
+; |diviseur|LessThan0~11  ; |diviseur|LessThan0~11  ; out0             ;
+; |diviseur|LessThan0~12  ; |diviseur|LessThan0~12  ; out0             ;
+; |diviseur|LessThan0~13  ; |diviseur|LessThan0~13  ; out0             ;
+; |diviseur|LessThan0~14  ; |diviseur|LessThan0~14  ; out0             ;
+; |diviseur|LessThan0~15  ; |diviseur|LessThan0~15  ; out0             ;
+; |diviseur|LessThan0~16  ; |diviseur|LessThan0~16  ; out0             ;
+; |diviseur|LessThan0~17  ; |diviseur|LessThan0~17  ; out0             ;
+; |diviseur|LessThan0~18  ; |diviseur|LessThan0~18  ; out0             ;
+; |diviseur|LessThan0~19  ; |diviseur|LessThan0~19  ; out0             ;
+; |diviseur|LessThan0~20  ; |diviseur|LessThan0~20  ; out0             ;
+; |diviseur|LessThan0~21  ; |diviseur|LessThan0~21  ; out0             ;
+; |diviseur|LessThan0~22  ; |diviseur|LessThan0~22  ; out0             ;
+; |diviseur|LessThan0~23  ; |diviseur|LessThan0~23  ; out0             ;
+; |diviseur|LessThan0~24  ; |diviseur|LessThan0~24  ; out0             ;
+; |diviseur|LessThan0~25  ; |diviseur|LessThan0~25  ; out0             ;
+; |diviseur|LessThan0~26  ; |diviseur|LessThan0~26  ; out0             ;
+; |diviseur|LessThan0~27  ; |diviseur|LessThan0~27  ; out0             ;
+; |diviseur|LessThan0~28  ; |diviseur|LessThan0~28  ; out0             ;
+; |diviseur|Add0~25       ; |diviseur|Add0~25       ; out0             ;
+; |diviseur|Add0~26       ; |diviseur|Add0~26       ; out0             ;
+; |diviseur|Add0~27       ; |diviseur|Add0~27       ; out0             ;
+; |diviseur|Add0~28       ; |diviseur|Add0~28       ; out0             ;
+; |diviseur|Add0~29       ; |diviseur|Add0~29       ; out0             ;
+; |diviseur|Add0~30       ; |diviseur|Add0~30       ; out0             ;
+; |diviseur|Add0~31       ; |diviseur|Add0~31       ; out0             ;
+; |diviseur|Add0~32       ; |diviseur|Add0~32       ; out0             ;
+; |diviseur|Add0~33       ; |diviseur|Add0~33       ; out0             ;
+; |diviseur|Add0~34       ; |diviseur|Add0~34       ; out0             ;
+; |diviseur|Add0~35       ; |diviseur|Add0~35       ; out0             ;
+; |diviseur|Add0~36       ; |diviseur|Add0~36       ; out0             ;
+; |diviseur|Add0~37       ; |diviseur|Add0~37       ; out0             ;
+; |diviseur|Add0~38       ; |diviseur|Add0~38       ; out0             ;
+; |diviseur|Add0~39       ; |diviseur|Add0~39       ; out0             ;
+; |diviseur|Add0~40       ; |diviseur|Add0~40       ; out0             ;
+; |diviseur|Add0~41       ; |diviseur|Add0~41       ; out0             ;
+; |diviseur|Add0~42       ; |diviseur|Add0~42       ; out0             ;
+; |diviseur|Add0~43       ; |diviseur|Add0~43       ; out0             ;
+; |diviseur|Add0~44       ; |diviseur|Add0~44       ; out0             ;
+; |diviseur|Add0~45       ; |diviseur|Add0~45       ; out0             ;
+; |diviseur|Add0~46       ; |diviseur|Add0~46       ; out0             ;
+; |diviseur|Add0~47       ; |diviseur|Add0~47       ; out0             ;
+; |diviseur|Add0~48       ; |diviseur|Add0~48       ; out0             ;
+; |diviseur|Add0~49       ; |diviseur|Add0~49       ; out0             ;
+; |diviseur|Add0~50       ; |diviseur|Add0~50       ; out0             ;
++-------------------------+-------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Sep 03 11:38:14 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off diviseur -c diviseur
+Info: Using vector source file "C:/Users/Etudiant/Desktop/Quartus_project/diviseur/sim_diviseur.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of sim_diviseur.vwf called diviseur.sim_ori.vwf has been created in the db folder
+Info: Simulation end time 10.0 us did not reach the end of the input vector, which ended at 10.0 s
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      44.29 %
+Info: Number of transitions in simulation is 72558
+Info: Vector file sim_diviseur.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 150 megabytes
+    Info: Processing ended: Thu Sep 03 11:38:20 2020
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
+
+

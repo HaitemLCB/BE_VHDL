@@ -1,0 +1,6 @@
+|TP1_block
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+B1 => inst.IN1
+
+
